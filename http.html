@@ -10,9 +10,9 @@
 		
 		<div    ng-controller="myCtrl">{{data}}</div>
 		<!--双向数据绑定：使用ng-model和在controller中使用 $scope.要绑定的变量名 -->
-		<div  ng-controller="myCtrl2"><input type="text" ng-model="name" ng-change="sayHello()"/>{{hello}}</div>
+		<div  ng-controller="myCtrl2"><input type="text" ng-model="name" ng-change="setData();sayHello();"/>{{hello}}</div>
 
-		<!-- <div  ng-controller="myCtrl3"><p ng-model="name">{{hello2}}</p></div> -->
+		<div  ng-controller="myCtrl3"><button name="data" ng-click="update()" value="button" ><p>{{input}}</p></button></div>
 	<script src="js/angular.min.js"></script>	
 	<script src="js/controller.js"></script>	
 	</body>

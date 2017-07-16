@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+	<title></title>
+	<!-- script标签必须以</script>结尾，不能以 />结尾-->
+		
+	</head>
+	<body>
+		<p>angular http service</p>
+		
+		<div    ng-controller="myCtrl">{{data}}</div>
+		<!--双向数据绑定：使用ng-model和在controller中使用 $scope.要绑定的变量名 -->
+		<div  ng-controller="myCtrl2"><input type="text" ng-model="name" ng-change="sayHello()"/>{{hello}}</div>
+
+		<!-- <div  ng-controller="myCtrl3"><p ng-model="name">{{hello2}}</p></div> -->
+	<script src="js/angular.min.js"></script>	
+	<script src="js/controller.js"></script>	
+	</body>
+	
+</html>

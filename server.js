@@ -7,6 +7,7 @@ var app = new express();
 
 app.use(serveStatic(__dirname + '/'));
 app.get("/", function(req, res) {
+	//首页的页面名字
     res.sendFile(__dirname + "/index.html");
 })
 app.listen(1337, "localhost");

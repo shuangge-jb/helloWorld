@@ -1,4 +1,4 @@
-var myApp=angular.module("myApp",[]);
+var myApp=angular.module("myApp");
 //调用HTTP服务
 myApp.controller("myCtrl",function($scope,$http){
 $http.get("server.js").then(function(response){
@@ -39,7 +39,7 @@ $scope.setData=function(){
 }]);
 //显式调用function的$inject
 function logic($scope,dataShareService){
-	$scope.input='666';
+	$scope.input='';
 	
 	$scope.update=function(){
 		$scope.input=dataShareService.getData();

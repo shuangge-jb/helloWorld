@@ -6,8 +6,8 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     //配置跳转的视图，包括一级视图和二级视图
     //一级视图对应的是菜单
     //二级视图对应的是子页面
-    $stateProvider.state("database", { url: "/database", templateUrl: "/data/page/pageTab.html" })
-        // .state("http", { url: "/http", templateUrl: "http.html" })
+    $stateProvider.state("database", { url: "/database", templateUrl: "page/pageTab.html" })
+        .state("http", { url: "/http", templateUrl: "http.html" })
         .state("database.instance_database", { url: "/instance_database", templateUrl: "page/instance_database.html" })
         .state("database.instance_redis", { url: "/instance_redis", templateUrl: "page/instance_redis.html" })
         .state("database.packupPolicy", { url: "/packupPolicy", templateUrl: "page/packupPolicy.html" })

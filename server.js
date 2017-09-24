@@ -1,4 +1,4 @@
-// Node静态服务
+﻿// Node静态服务
 var http = require("http");
 var express = require("express");
 var serveStatic = require('serve-static');
